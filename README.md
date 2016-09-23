@@ -6,7 +6,8 @@ This web app connects students of same and different campuses. Junior students c
 - `cd` into the folder.
 - run `npm install`.
 - run `npm start`.
-- open browser and head to `localhost:3000`
+- open browser and head to `localhost:3000`.
+
 >If you want to lint the code using eslint you have to add this line to your `package.json` file.
 ```
 "eslintConfig": {
