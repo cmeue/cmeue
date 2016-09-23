@@ -1,0 +1,33 @@
+{
+  "name": "cmeue",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.4.3"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "description": "Connecting students in campus",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmeue/cmeue.git"
+  },
+  "author": "Rajat Patwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmeue/cmeue/issues"
+  },
+  "homepage": "https://github.com/cmeue/cmeue#readme"
+}
