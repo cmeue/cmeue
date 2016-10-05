@@ -1,0 +1,21 @@
+.tab {
+  width: 33.33%;
+  text-align: center;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs > .active {
+  border-top: 2px solid #d26911;
+  border-bottom: 1px solid white;
+}
+
+.nav-tabs > li > a {
+  margin-right: 0px;
+  border: 1px solid transparent;
+  border-radius: 0px 0px 0 0;
+}
+
+.nav-tabs {
+  border-bottom: 0px;
+}
