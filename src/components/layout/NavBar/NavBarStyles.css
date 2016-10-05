@@ -1,0 +1,25 @@
+a.navbar-brand {
+  padding: 8px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  /*padding: 15px;*/
+  width: auto;
+}
+
+.navbar {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-button {
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.menu {
+  font-size: 2em;
+  color: #0079bf;
+}
