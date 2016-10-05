@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../utils/logo.png";
+import logo from "../../../utils/icons/4.png";
 import "./NavBarStyles.css";
 
 class NavBar extends React.Component {
@@ -16,13 +16,13 @@ class NavBar extends React.Component {
                     <div id="navbar" className="collapse navbar-collapse">
                         <ul className="nav navbar-nav">
                             <li className="active">
-                                <a href="#">Home</a>
+                                <a href="#">Profile</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#about">Sign in</a>
                             </li>
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#contact">Sign up</a>
                             </li>
                         </ul>
                     </div>
