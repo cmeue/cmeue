@@ -7,12 +7,12 @@ import BreadCrumb from "../BreadCrumbs/BreadCrumbs";
 class List extends React.Component {
     render() {
         let rows = [];
-        for (let i = 0; i < 10; i++) {
-            rows.push(<ListElement entryName={"List Item " + i} key={i}/>);
+        for (let i = 0; i < this.props.entries.length; i++) {
+            rows.push(<ListElement entryName={this.props.entries[i]} key={i}/>);
         }
         return (
             <ul className="list-group">
-                <BreadCrumb directory={["ecb", "4th-Year", "Ishan"]}/> {rows}
+                {rows}
             </ul>
         );
     }
