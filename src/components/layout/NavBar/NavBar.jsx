@@ -5,9 +5,8 @@ import "./NavBarStyles.css";
 class NavBar extends React.Component {
     render() {
         return (
-          <div><h1>NavigationBar</h1> <span><img src={logo} /></span> </div>
+          <div><h1>NavigationBar</h1> <span><img src={logo} /></span></div>
         );
     }
 }
-
 export default NavBar;

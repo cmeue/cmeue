@@ -8,6 +8,8 @@
     "react-scripts": "0.4.3"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
