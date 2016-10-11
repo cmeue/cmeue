@@ -1,6 +1,6 @@
 import React from "react";
-import BreadCrumbs from "../../components/BreadCrumbs/BreadCrumbs"
-import List from "../../components/List/List";
+import BreadCrumbs from "../../components/common/BreadCrumbs/BreadCrumbs"
+import List from "../../components/common/List/List";
 
 class Homepage extends React.Component {
     render() {
