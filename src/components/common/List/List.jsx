@@ -1,0 +1,21 @@
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./ListStyles.css";
+import ListElement from "../ListElement/ListElement";
+import BreadCrumb from "../BreadCrumbs/BreadCrumbs";
+
+class List extends React.Component {
+    render() {
+        let rows = [];
+        for (let i = 0; i < this.props.entries.length; i++) {
+            rows.push(<ListElement entryName={this.props.entries[i]} key={i}/>);
+        }
+        return (
+            <ul className="list-group">
+                {rows}
+            </ul>
+        );
+    }
+}
+
+export default List;
