@@ -1,8 +1,6 @@
 import React from "react";
 import "./FooterStyles.css";
-import logo from "../../../utils/logo.svg";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "font-awesome/css/font-awesome.min.css";
+import logo from "../../../utils/icons/3.png";
 
 class Footer extends React.Component {
     render() {
@@ -10,7 +8,7 @@ class Footer extends React.Component {
             <div className="footer">
                 <div className="container">
                     <span>
-                        <a href="#"><img className="footer-logo" src={logo}/></a>© 2016 CMEUE.</span>
+                        <a href="#"><img className="footer-logo" alt="footer logo" src={logo}/></a>© 2016 CMEUE.</span>
                     <p className="footer-block">
                         <span className="footer-menu-link">
                             <a href="#" target="_blank">Terms</a>

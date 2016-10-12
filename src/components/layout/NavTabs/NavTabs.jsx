@@ -8,7 +8,7 @@ class NavTabs extends React.Component {
             <div>
                 <ul className="nav nav-tabs">
                     <li role="presentation" className="tab">
-                        <Link to="1" activeClassName="inner-tab-link" className="inner-tabs">Colleges</Link>
+                        <Link to="/" activeClassName="inner-tab-link" className="inner-tabs">Colleges</Link>
                     </li>
                     <li role="presentation" className="tab">
                         <Link to="2" activeClassName="inner-tab-link" className="inner-tabs">Chats</Link>
