@@ -6,13 +6,13 @@
 }
 
 .nav-tabs .inner-tabs {
-    margin-right: 0px;
+    margin-right: 0;
     border: 1px solid transparent;
     border-radius: 0 0 0 0;
 }
 
 .nav-tabs {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 
 .inner-tab-link {
@@ -21,7 +21,7 @@
     border-color: #d26911 #ddd #fff;
 }
 
-.nav>li>a:focus {
+.nav > li > a:focus {
     background-color: #000;
     text-decoration: none;
     background-color: white;

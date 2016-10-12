@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../utils/icons/4.png";
+import logo from "../../../utils/icons/logo-transparent.png";
 import "./NavBarStyles.css";
 
 class NavBar extends React.Component {
@@ -9,9 +9,9 @@ class NavBar extends React.Component {
                 <div className="container">
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle collapsed menu-button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                          <span className="glyphicon glyphicon-menu-hamburger menu" aria-hidden="true"></span>
+                            <span className="glyphicon glyphicon-menu-hamburger menu" aria-hidden="true"></span>
                         </button>
-                        <a className="navbar-brand" href="#"><img alt="Cmeue" src={logo} /></a>
+                        <a className="navbar-brand" href="#"><img alt="Cmeue" src={logo}/></a>
                     </div>
                     <div id="navbar" className="collapse navbar-collapse">
                         <ul className="nav navbar-nav">
