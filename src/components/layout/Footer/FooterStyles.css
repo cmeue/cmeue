@@ -1,0 +1,26 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.footer-menu, .footer-menu-link {
+    padding: 10px;
+}
+
+.footer-logo {
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-block {
+    margin: 20px 0;
+    float: right;
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-menu-link {
+        display: none;
+    }
+}
