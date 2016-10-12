@@ -1,12 +1,15 @@
 import React from "react";
-import NavBar from "../../components/layout/NavBar/NavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import Footer from "../../components/layout/Footer/Footer";
+import Header from "../../components/layout/Header/Header";
 
 class Layout extends React.Component {
     render() {
         return (
             <div>
-                <NavBar />
+                <Header />
+                {this.props.children}
                 <Footer />
             </div>
         );

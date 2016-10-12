@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ListStyles.css";
 import ListElement from "../ListElement/ListElement";
-import BreadCrumb from "../BreadCrumbs/BreadCrumbs";
 
 class List extends React.Component {
     render() {
