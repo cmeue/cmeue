@@ -9,11 +9,11 @@
     height: 70px;
     width: 70px;
     margin-right: 15px;
+    vertical-align: middle;
 }
 
 .student-short-info {
-    display: inline;
-    /*vertical-align: sub;*/
+    display: table;
 }
 
 .info-card-pic-img {
@@ -22,14 +22,12 @@
 
 .info-card-sub-content {
     color: gray;
-    font-size: 0.85em;
-    margin-bottom: 2px;
-}
-
-.info-card-inner-content {
-    display: inline-block;
+    font-size: 0.80em;
+    margin-bottom: 0;
+    display: block;
 }
 
 .info-card-header {
-    margin: 5px 0 2px 0;
+    margin: 7px 0 2px 0;
+    display: block;
 }

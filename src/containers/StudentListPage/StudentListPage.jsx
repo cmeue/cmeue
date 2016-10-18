@@ -1,5 +1,5 @@
 import React from "react";
-import InfoCard from "../../components/studentListPage/InfoCard/InfoCard";
+import InfoCardList from "../../components/studentListPage/InfoCardList/InfoCardList";
 import BreadCrumbs from "../../components/common/BreadCrumbs/BreadCrumbs"
 
 class StudentListPage extends React.Component {
@@ -7,11 +7,7 @@ class StudentListPage extends React.Component {
         return (
             <div>
                 <BreadCrumbs directory={["College", "ECB"]}/>
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
+                <InfoCardList />
             </div>
         );
     }
