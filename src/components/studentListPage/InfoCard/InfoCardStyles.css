@@ -1,0 +1,33 @@
+.info-card {
+    border-radius: 0;
+    min-height: 100px;
+    padding: 14px;
+}
+
+.info-card-pic {
+    display: inline;
+    height: 70px;
+    width: 70px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.student-short-info {
+    display: table;
+}
+
+.info-card-pic-img {
+    border-radius: 50%;
+}
+
+.info-card-sub-content {
+    color: gray;
+    font-size: 0.80em;
+    margin-bottom: 0;
+    display: block;
+}
+
+.info-card-header {
+    margin: 7px 0 2px 0;
+    display: block;
+}

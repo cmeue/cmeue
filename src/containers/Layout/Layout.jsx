@@ -1,8 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import Footer from "../../components/layout/Footer/Footer";
+import "font-awesome/css/font-awesome.min.css";
 import Header from "../../components/layout/Header/Header";
+import "./LayoutStyles.css";
 
 class Layout extends React.Component {
     render() {
@@ -10,7 +11,6 @@ class Layout extends React.Component {
             <div>
                 <Header />
                 {this.props.children}
-                <Footer />
             </div>
         );
     }
