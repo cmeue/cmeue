@@ -5,7 +5,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="search-bar-block">
-                <input type="seach" className="form-control search-bar" placeholder="Search" />
+                <input type="seach" className="form-control" placeholder="Search" />
             </div>
         );
     }
