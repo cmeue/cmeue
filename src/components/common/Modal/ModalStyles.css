@@ -1,0 +1,11 @@
+.custom-modal-dialog {
+    margin: -1px;
+    height: 100%;
+}
+
+.custom-modal-content {
+    height: 100.3%;
+    border-radius: 0px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
