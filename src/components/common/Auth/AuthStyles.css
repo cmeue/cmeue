@@ -1,0 +1,25 @@
+.auth-btn-group {
+    margin-top: 50%;
+}
+
+.auth-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fafafa;
+}
+
+.auth-linkedin {
+    background-color: #1883bb;
+}
+
+.auth-facebook {
+    background-color: #3b5998;
+}
+
+.auth-google {
+    background-color: #db4437;
+}

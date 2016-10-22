@@ -19,7 +19,7 @@ class NavBar extends React.Component {
                                 <a href="#">Profile</a>
                             </li>
                             <li>
-                                <a href="#about">Sign in</a>
+                                <a href="#about" data-toggle="modal" data-target="#modal">Sign in</a>
                             </li>
                             <li>
                                 <a href="#contact">Sign up</a>
