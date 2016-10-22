@@ -1,0 +1,33 @@
+.conv-card {
+    border-radius: 0;
+    min-height: 85px;
+    padding: 14px;
+}
+
+.conv-card-pic {
+    display: inline;
+    height: 55px;
+    width: 55px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.conv-card-info {
+    display: table;
+}
+
+.conv-card-pic-img {
+    border-radius: 50%;
+}
+
+.conv-card-sub-content {
+    color: gray;
+    font-size: 0.80em;
+    margin-bottom: 0;
+    display: block;
+}
+
+.conv-card-header {
+    margin: 5px 0 2px 0;
+    display: block;
+}
