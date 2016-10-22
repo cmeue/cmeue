@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import logo from "../../../utils/icons/logo-transparent.png";
 import "./NavBarStyles.css";
 
@@ -19,10 +20,13 @@ class NavBar extends React.Component {
                                 <a href="#">Profile</a>
                             </li>
                             <li>
-                                <a href="#about" data-toggle="modal" data-target="#modal">Sign in</a>
+                                <a data-toggle="modal" data-target="#modal">Sign in</a>
                             </li>
                             <li>
-                                <a href="#contact">Sign up</a>
+                                <a data-toggle="modal" data-target="#modal">Sign up</a>
+                            </li>
+                            <li className="active">
+                                <Link to="/settingspage">Settings</Link>
                             </li>
                         </ul>
                     </div>

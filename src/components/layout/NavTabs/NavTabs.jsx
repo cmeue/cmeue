@@ -11,10 +11,10 @@ class NavTabs extends React.Component {
                         <Link to="/" activeClassName="inner-tab-link" className="inner-tabs">Colleges</Link>
                     </li>
                     <li role="presentation" className="tab">
-                        <Link to="2" activeClassName="inner-tab-link" className="inner-tabs">Chats</Link>
+                        <Link to="chatspage" activeClassName="inner-tab-link" className="inner-tabs">Chats</Link>
                     </li>
                     <li role="presentation" className="tab">
-                        <Link to="3" activeClassName="inner-tab-link" className="inner-tabs">Search</Link>
+                        <Link to="searchpage" activeClassName="inner-tab-link" className="inner-tabs">Search</Link>
                     </li>
                 </ul>
             </div>
