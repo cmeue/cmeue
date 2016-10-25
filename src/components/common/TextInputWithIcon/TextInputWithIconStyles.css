@@ -1,0 +1,17 @@
+.text-input-with-icon {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.text-input-with-icon-input {
+    width: 90%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: inline;
+}
+
+.text-input-with-icon-btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
