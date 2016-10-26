@@ -5,9 +5,9 @@ class TextInputWithIcon extends React.Component {
     render() {
         return (
             <div className="text-input-with-icon">
-                <button className="btn text-input-with-icon-btn">
+                <div className="embossed">
                     <span className={this.props.glyph || "glyphicon glyphicon-user"}></span>
-                </button>
+                </div>
                 <input type={this.props.type || "text"} className="form-control text-input-with-icon-input" placeholder={this.props.placeHolder || "Example Placeholder"} name={this.props.name}/>
             </div>
         );

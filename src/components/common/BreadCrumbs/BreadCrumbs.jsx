@@ -13,6 +13,7 @@ class BreadCrumb extends React.Component {
                 </li>
             );
         }
+        //Last Directory will be active
         rows.push(
             <li key={i} className="active">{this.props.directory[i]}</li>
         );
