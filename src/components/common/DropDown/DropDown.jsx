@@ -16,7 +16,7 @@ class DropDown extends React.Component {
         return (
             <div className="form-group col-sm-6 col-xs-6 drop-down-component">
                 <label htmlFor={this.props.dropDownTitle}>{this.props.dropDownTitle}</label>
-                <select className="form-control" id={this.props.dropDownTitle}>
+                <select className="form-control drop-down-blue" id={this.props.dropDownTitle}>
                     {dropDownElems}
                 </select>
             </div>
