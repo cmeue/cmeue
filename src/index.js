@@ -1,3 +1,4 @@
+/*eslint-disable no-unused-vars*/
 import React from "react";
 import ReactDOM from "react-dom";
 import {Router, Route, IndexRoute, hashHistory} from "react-router";
@@ -8,6 +9,7 @@ import SearchPage from "./containers/SearchPage/SearchPage";
 import SettingsPage from "./containers/SettingsPage/SettingsPage";
 import ChatsPage from "./containers/ChatsPage/ChatsPage";
 import EditProfilePage from "./containers/EditProfilePage/EditProfilePage";
+/*eslint-enable*/
 
 ReactDOM.render(
 	<Router history={hashHistory}>

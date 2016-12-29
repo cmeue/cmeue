@@ -1,15 +1,14 @@
 import React from "react";
-import Pill from "../Pill/Pill";
+import Pill from "../Pill/Pill"; //eslint-disable-line no-unused-vars
 import "./SkillAreaStyles.css";
 
 class SkillArea extends React.Component {
     render() {
-        let mySkills = this.props.skillSet;
-        let skillArray = [];
+        let skillArray = this.props.skillSet;
 
-        for(let i=0; i < mySkills.length; i++) {
-            skillArray.push(<div className="left-margin"><Pill key={i}>{mySkills[i]}</Pill></div>);
-        }
+        skillArray = skillArray.map((x)=>{
+            return (<div className="left-margin" key={x}><Pill key={x}>{x}</Pill></div>);
+        });
 
         return (
             <div>
