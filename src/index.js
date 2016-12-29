@@ -7,7 +7,7 @@ import StudentListPage from "./containers/StudentListPage/StudentListPage";
 import SearchPage from "./containers/SearchPage/SearchPage";
 import SettingsPage from "./containers/SettingsPage/SettingsPage";
 import ChatsPage from "./containers/ChatsPage/ChatsPage";
-import EditProfilePage from "./containers/EditProfilePage/EditProfilePage"
+import EditProfilePage from "./containers/EditProfilePage/EditProfilePage";
 
 ReactDOM.render(
 	<Router history={hashHistory}>
@@ -17,6 +17,7 @@ ReactDOM.render(
 			<Route path="searchpage" component={SearchPage}></Route>
 			<Route path="studentlistpage" component={StudentListPage}></Route>
 			<Route path="settingspage" component={SettingsPage}></Route>
+			<Route path="editprofilepage" component={EditProfilePage}></Route>
 		</Route>
 	</Router>,
 	document.getElementById("root")
