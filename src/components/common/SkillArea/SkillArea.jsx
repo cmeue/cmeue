@@ -6,8 +6,8 @@ class SkillArea extends React.Component {
     render() {
         let skillArray = this.props.skillSet;
 
-        skillArray = skillArray.map((x)=>{
-            return (<div className="left-margin" key={x}><Pill key={x}>{x}</Pill></div>);
+        skillArray = skillArray.map((x, i)=>{
+            return (<div className="left-margin" key={i}><Pill key={x}>{x}</Pill></div>);
         });
 
         return (
