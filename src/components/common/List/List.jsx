@@ -1,16 +1,18 @@
+/*eslint-disable no-unused-vars*/
 import React from "react";
 import "./ListStyles.css";
 import ListElement from "../ListElement/ListElement";
+/*eslint-enable*/
 
 class List extends React.Component {
     render() {
-        let rows = [];
-        for (let i = 0; i < this.props.entries.length; i++) {
-            rows.push(<ListElement entryName={this.props.entries[i]} key={i}/>);
-        }
+        let rows = this.props.entries;
+        let rowElements = rows.map((x, i)=>{
+            return <ListElement entryName={this.props.entries[i]} key={i}/>;
+        });
         return (
             <ul className="list-group">
-                {rows}
+                {rowElements}
             </ul>
         );
     }
