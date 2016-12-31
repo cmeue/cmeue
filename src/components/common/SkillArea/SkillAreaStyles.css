@@ -1,0 +1,9 @@
+.skill-area-full-width {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-margin {
+    margin-left: 1em;
+}

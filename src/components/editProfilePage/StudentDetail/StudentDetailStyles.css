@@ -1,0 +1,14 @@
+.student-detail {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.student-detail>h4 {
+    display: inline;
+}
+
+.student-detail #user-name, .student-detail #branch, .student-detail #college {
+    margin-left: 5px;
+    font-size: 1em;
+}

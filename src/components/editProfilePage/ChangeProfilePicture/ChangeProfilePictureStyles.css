@@ -1,0 +1,10 @@
+.change-profile-picture {
+    width: 100%;
+    text-align: center;
+}
+
+.change-profile-picture>img {
+    width: 10em;
+    height: 10em;
+    margin: auto;
+}

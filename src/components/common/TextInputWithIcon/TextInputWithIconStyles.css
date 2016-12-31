@@ -1,0 +1,27 @@
+.text-input-with-icon {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.8em;
+}
+
+.text-input-with-icon-input {
+    width: calc(100% - 3em);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: inline;
+}
+
+.embossed{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    top: 0;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    width: 3em;
+    background: #337ab7;
+    color:white;
+    display: inline-block;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
