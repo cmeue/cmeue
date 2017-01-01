@@ -9,7 +9,17 @@ import SearchPage from "./containers/SearchPage/SearchPage";
 import SettingsPage from "./containers/SettingsPage/SettingsPage";
 import ChatsPage from "./containers/ChatsPage/ChatsPage";
 import EditProfilePage from "./containers/EditProfilePage/EditProfilePage";
+import * as firebase from "firebase";
 /*eslint-enable*/
+
+var config = {
+    apiKey: "AIzaSyBPMT0tVh4J6U2IFcQkVyV0ATap-1sFrKw",
+    authDomain: "cmeue-eaf4f.firebaseapp.com",
+    databaseURL: "https://cmeue-eaf4f.firebaseio.com",
+    storageBucket: "cmeue-eaf4f.appspot.com",
+    messagingSenderId: "792911993206"
+};
+firebase.initializeApp(config);
 
 ReactDOM.render(
 	<Router history={hashHistory}>
