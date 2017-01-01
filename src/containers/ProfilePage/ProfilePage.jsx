@@ -15,8 +15,9 @@ class ProfilePage extends React.Component {
             branch: "Computer Science & Engineering",
             year: "3rd",
             Rating: "3",
+            people :"450",
             description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            skills: ["c++,c,JavaScript,java"]
+            skills: ["c++","c","JavaScript","java","PHP","Angular.js","Android"]
         };
         return (
             <div className="container">
@@ -26,9 +27,9 @@ class ProfilePage extends React.Component {
                     </div>
                     <div className="col-xs-8 col-md-9 col-lg-8 Info">
                         <Info studentInfo={stud}/>
-                        <span>
+                        <span className="starblock">
                             <span className="imagesize"><img src={fullStar} alt="star"/></span>
-                            <span>{stud.Rating}(450)</span>
+                            <span>{stud.Rating}({stud.people})</span>
                         </span>
                     </div>
                 </div>

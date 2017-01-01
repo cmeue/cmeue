@@ -1,8 +1,11 @@
+.header{
+    font-style: normal;
+}
 #star{
     width: 100%;
     display:inline-block;
     text-align: center;
-    
+
 }
 #rating > span {
   display: inline-block;

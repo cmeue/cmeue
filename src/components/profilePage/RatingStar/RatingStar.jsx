@@ -7,7 +7,7 @@ class RatingStar extends React.Component {
     render() {
         return (
             <div id="star">
-                <h4>Rate your buddy
+                <h4 className="header">Rate your buddy
                 </h4>
                 <span id="rating">
                     <span>
