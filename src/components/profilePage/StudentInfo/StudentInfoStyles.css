@@ -1,0 +1,14 @@
+.Student_Info {
+display: inline-block;
+}
+.name{
+    color: blue;
+}
+.size{
+    font-size: 13px;
+    font:bold;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}

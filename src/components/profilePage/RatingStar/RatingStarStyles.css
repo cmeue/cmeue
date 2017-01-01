@@ -1,0 +1,17 @@
+#star{
+    width: 100%;
+    display:inline-block;
+    text-align: center;
+    
+}
+#rating > span {
+  display: inline-block;
+  position: relative;
+}
+#rating:hover > span:before{
+    content: url(../../../utils/Rating_Icons/star_1.png); /* Place a solid star over all the empty stars when you hover them. */
+   position: absolute;
+}
+#rating > span:hover ~ span:before {
+   content:url(../../../utils/Rating_Icons/star_3.png); /* Remove the solid star from any siblings after the one you’re hovering. */
+}
