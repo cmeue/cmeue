@@ -13,11 +13,11 @@ class ProfilePage extends React.Component {
             userName: "johndoe",
             college: "Govt. Engineering College Bikaner",
             branch: "Computer Science & Engineering",
-            year: "3rd",
+            year: "3",
             Rating: "3",
             people :"450",
             description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            skills: ["c++","c","JavaScript","java","PHP","Angular.js","Android"]
+            skills: ["C++","C","JavaScript","Java","PHP","Angular.js","Android"]
         };
         return (
             <div className="container">

@@ -2,12 +2,19 @@
   display: inline-block;
 }
 .name{
-    color: blue;
+    color:gray;
+    font-weight: bold;
+}
+sup{
+    margin: 2px;
+}
+span{
+    margin-left:7px; 
 }
 .size{
-    font-size: 13px;
+    font-size: 15px;
     font:bold;
-    clear: both;
+    font-style: normal;
     overflow: hidden;
     white-space: nowrap;
 }

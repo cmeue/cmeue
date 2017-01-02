@@ -9,7 +9,7 @@ class StudentInfo extends React.Component {
             <div className="Student_Info">
                 <h3 className="name">{stuInfo.name}</h3>
                 <p className="size">{stuInfo.year}
-                    Year</p>
+                    <sup>rd</sup><span>Year</span></p>
                 <p className="size">{stuInfo.branch}</p>
                 <p className="size">{stuInfo.college}</p>
             </div>
