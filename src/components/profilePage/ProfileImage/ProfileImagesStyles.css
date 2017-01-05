@@ -1,12 +1,19 @@
-.profile_picture {
+.profile-picture {
     margin-top: 15px;
+    text-align: center;
 }
 
-.size_of_dp {
+.profile-picture>button {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.size-of-dp {
     width: 10em;
     height: 9em;
 }
-.student_name{
+
+.student-name {
     padding: 0px;
     font-size: 16px;
 }

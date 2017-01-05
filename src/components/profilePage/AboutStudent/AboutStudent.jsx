@@ -5,9 +5,9 @@ class AboutStudent extends React.Component {
     render() {
         let des = this.props.description;
         return (
-            <div className="container text">
+            <div className="container profile-page-text">
                 <h4>About</h4>
-                {des}
+                <p>{des}</p>
             </div>
         );
     }

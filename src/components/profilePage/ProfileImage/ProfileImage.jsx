@@ -1,15 +1,14 @@
 import React from "react";
 import "./ProfileImagesStyles.css";
-import defaultPic from "../../../utils/icons/profile.png";
+import defaultPic from "../../../utils/icons/account_pic.png";
 
 class ProfileImage extends React.Component {
 
     render() {
-        let studentName = this.props.name;
         return (
-            <div className="profile_picture">
-                <img className="img-responsive size_of_dp" src={this.props.imgSrc || defaultPic} alt={this.props.alt || "profile image"}/>
-                <h3 className="student_name">{studentName}</h3>
+            <div className="profile-picture">
+                <img className="img-responsive size-of-dp" src={this.props.imgSrc || defaultPic} alt={this.props.alt || "profile image"}/>
+                <button className="btn btn-primary">CONTACT</button>
             </div>
         );
     }

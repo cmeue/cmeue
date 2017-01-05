@@ -1,20 +1,74 @@
-.header{
+.profile-page-header {
     font-style: normal;
 }
-#star{
-    width: 100%;
-    display:inline-block;
-    text-align: center;
 
+.profile-page-star {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    display: inline-block;
 }
-#rating > span {
-  display: inline-block;
-  position: relative;
+
+.profile-page-center-star {
+    display: inline-block;
+    vertical-align: middle;
+    clear: both;
 }
-#rating:hover > span:before{
-    content: url(../../../utils/Rating_Icons/star_1.png); /* Place a solid star over all the empty stars when you hover them. */
-   position: absolute;
+
+
+/****** Style Star Rating Widget *****/
+
+.profile-page-rating {
+    border: none;
 }
-#rating > span:hover ~ span:before {
-   content:url(../../../utils/Rating_Icons/star_3.png); /* Remove the solid star from any siblings after the one you’re hovering. */
+
+.profile-page-rating>input {
+    display: none;
+}
+
+.profile-page-rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+    font-size: 40px;
+}
+
+.profile-page-rating>.half:before {
+    content: "\f089";
+    font-size: 40px;
+    position: absolute;
+}
+
+.profile-page-rating>label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.profile-page-rating>input:checked~label,
+/* show gold star when clicked */
+
+.profile-page-rating:not(:checked)>label:hover,
+/* hover current star */
+
+.profile-page-rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+
+/* hover previous stars in list */
+
+.profile-page-rating>input:checked+label:hover,
+/* hover current star when changing rating */
+
+.profile-page-rating>input:checked~label:hover, .profile-page-rating>label:hover~input:checked~label,
+/* lighten current selection */
+
+.profile-page-rating>input:checked~label:hover~label {
+    color: #FFED85;
 }

@@ -1,20 +1,32 @@
-.Student_Info {
-  display: inline-block;
+.profile-page-student-info {
+    display: inline-block;
 }
-.name{
-    color:gray;
+
+.profile-page-name {
+    color: gray;
     font-weight: bold;
 }
-sup{
+
+.profile-page-size sup {
     margin: 2px;
 }
-span{
-    margin-left:7px; 
+
+.profile-page-size span {
+    margin-left: 7px;
 }
-.size{
+
+.profile-page-size {
     font-size: 15px;
-    font:bold;
+    font: bold;
     font-style: normal;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.profile-page-rating {
+    display: inline-block;
+}
+
+.profile-page-imagesize>i {
+    font-size: 25px;
 }
