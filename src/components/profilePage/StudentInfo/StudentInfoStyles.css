@@ -1,0 +1,32 @@
+.profile-page-student-info {
+    display: inline-block;
+}
+
+.profile-page-name {
+    color: gray;
+    font-weight: bold;
+}
+
+.profile-page-size sup {
+    margin: 2px;
+}
+
+.profile-page-size span {
+    margin-left: 7px;
+}
+
+.profile-page-size {
+    font-size: 15px;
+    font: bold;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.profile-page-rating {
+    display: inline-block;
+}
+
+.profile-page-imagesize>i {
+    font-size: 25px;
+}
