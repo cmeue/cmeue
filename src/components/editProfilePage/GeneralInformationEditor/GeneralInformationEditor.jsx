@@ -1,3 +1,4 @@
+/*eslint-disable no-unused-vars*/
 import React from "react";
 import "./GeneralInformationEditorStyles.css";
 import ChangeProfilePicture from "../ChangeProfilePicture/ChangeProfilePicture";
@@ -5,6 +6,7 @@ import TextInputWithIcon from "../../common/TextInputWithIcon/TextInputWithIcon"
 import StudentDetail from "../StudentDetail/StudentDetail";
 import TextArea from "../../common/TextArea/TextArea";
 import DropDown from "../../common/DropDown/DropDown";
+/*eslint-enable*/
 
 class GeneralInformationEditor extends React.Component {
     render() {
@@ -26,7 +28,7 @@ class GeneralInformationEditor extends React.Component {
                     <TextInputWithIcon name="phone" type="phone" glyph="glyphicon glyphicon-phone" placeHolder="Phone Number (Optional)" />
                     <TextArea placeHolder="Tell other students about yourself !"/>
                     <div className="row">
-                        <DropDown dropDownTitle="Branch" contents={["CSE", "EE", "ME"]}/>
+                        <DropDown dropDownTitle="Branch" contents={this.props.branchNames}/>
                         <DropDown dropDownTitle="College" contents={["StanFord", "MIT", "Mera College"]}/>
                     </div>
                 </div>
