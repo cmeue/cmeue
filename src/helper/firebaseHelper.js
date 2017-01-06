@@ -42,3 +42,17 @@ export function getAllColleges(callback) {
         callback(collegesName);
     });
 }
+export function getAllStudentFromCollegeId(id,callback){
+    const dbRef = firebase.database().ref();
+    const allStudentRef = dbRef.child("students");
+    let studentsName = [];
+    allStudentRef.once("value",(snap)=>{
+        snap.forEach(function(childSnap){
+            if( id===childSnap.child("collegeId").val()){
+                studentsName.push(childSnap.val());
+            }
+        });
+        callback(studentsName);
+    });
+}
+
