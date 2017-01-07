@@ -144,3 +144,13 @@ export function updateExistingStudent(id,studentPojo){
     ref.update(studentPojo);
     
 }
+
+/***************************************
+ * Method to delete the givin id student
+ * @param{id} id
+ ***************************************/
+export function deleteStudentFromStudentId(id){
+    const dbRef = firebase.database().ref();
+    const studentRef = dbRef.child("students").child(id);
+    studentRef.remove();
+}
