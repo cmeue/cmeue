@@ -1,6 +1,8 @@
 import "../index.js";
 import * as firebase from "firebase";
 
+// All  get method return object with the help of collegeId or studentId. 
+
 export function getAllBrancheIdsFromCollegeId(id, callback) {
     const dbRef = firebase.database().ref();
     const collegeRef = dbRef.child("colleges").child(id);
@@ -55,4 +57,19 @@ export function getAllStudentFromCollegeId(id,callback){
         callback(studentsName);
     });
 }
+export function getAllStudents(callback){
+    const dbRef = firebase.database().ref();
+    const studentsRef = dbRef.child("students");
+    studentsRef.once("value",(snap)=>{
+        callback(snap.val());
+    });
+}
+export function getAllStudentFromStudentId(id,callback){
+    const dbRef = firebase.database().ref();
+    const studentRef = dbRef.child("students").child(id);
+    studentRef.once("value",(snap)=>{
+        callback(snap.val());
+    });
+}
+
 
