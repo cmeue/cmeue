@@ -108,12 +108,39 @@ export function getStudentFromStudentId(id, callback) {
     });
 }
 
+/****************************************** 
+ * Method to get branch name from branch id
+ * @param{id} id
+ * @param{callback} callback
+ ******************************************/
+export function getBranchNameFromBranchId(id,callback){
+    const dbRef = firebase.database().ref();
+    const branchRef = dbRef.child("branches").child(id);
+    branchRef.once("value",(snap)=>{
+        callback(snap.val());
+    });
+}
+
 
 /************************************
- * Method to put colleges in firebase
+ * Method to put student in firebase
+ * @param{studentPojo} Pojo
  ************************************/
 export function putNewStudent(studentPojo) {
     const dbRef = firebase.database().ref();
     const ref = dbRef.child("students").push();
     ref.set(studentPojo);
+}
+
+
+/***********************************************
+ * Method to update existing student in firebase
+ * @param{id} id
+ * @param{studentPojo} Pojo
+ **********************************************/
+export function updateExistingStudent(id,studentPojo){
+    const dbRef = firebase.database().ref();
+    const ref = dbRef.child("students").child(id);
+    ref.update(studentPojo);
+    
 }
