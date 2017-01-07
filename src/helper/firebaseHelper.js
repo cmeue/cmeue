@@ -1,8 +1,11 @@
 import "../index.js";
 import * as firebase from "firebase";
 
-// All  get method return object with the help of collegeId or studentId. 
-
+/************************************************************
+ * Function to query all branches ids from given college's id
+ * @param {Number} id
+ * @param {function} callback
+ ************************************************************/
 export function getAllBrancheIdsFromCollegeId(id, callback) {
     const dbRef = firebase.database().ref();
     const collegeRef = dbRef.child("colleges").child(id);
@@ -11,6 +14,11 @@ export function getAllBrancheIdsFromCollegeId(id, callback) {
     });
 }
 
+/********************************************************
+ * Function to query all branches names from college's id
+ * @param {Number} id 
+ * @param {function} callback
+ ********************************************************/
 export function getAllBrancheNamesFromCollegeId(id, callback) {
     const dbRef = firebase.database().ref();
     const branchRef = dbRef.child("branches");
@@ -26,6 +34,12 @@ export function getAllBrancheNamesFromCollegeId(id, callback) {
         }
     });
 }
+
+/**
+ * Function to get the college info from college's id
+ * @param {Number} id
+ * @param {function} callback
+ */
 export function getCollegeFromCollegeId(id, callback) {
     const dbRef = firebase.database().ref();
     const collegeRef = dbRef.child("colleges").child(id);
@@ -33,43 +47,73 @@ export function getCollegeFromCollegeId(id, callback) {
         callback(snap.val());
     });
 }
+
+/********************************
+ * Function to query all colleges
+ * @param {function} callback
+ ********************************/
 export function getAllColleges(callback) {
     const dbRef = firebase.database().ref();
     const allCollegesRef = dbRef.child("colleges");
     let collegesName = [];
-    allCollegesRef.once("value", (snap)=> {
-        snap.forEach(function(childSnap) {
+    allCollegesRef.once("value", (snap) => {
+        snap.forEach(function (childSnap) {
             collegesName.push(childSnap.val());
         });
         callback(collegesName);
     });
 }
-export function getAllStudentFromCollegeId(id,callback){
+
+/********************************************************
+ * Function to get all students from a particular college
+ * @param {Number} id
+ * @param {function} callback
+ ********************************************************/
+export function getAllStudentFromCollegeId(id, callback) {
     const dbRef = firebase.database().ref();
     const allStudentRef = dbRef.child("students");
     let studentsName = [];
-    allStudentRef.once("value",(snap)=>{
-        snap.forEach(function(childSnap){
-            if( id===childSnap.child("collegeId").val()){
+    allStudentRef.once("value", (snap) => {
+        snap.forEach(function (childSnap) {
+            if (id === childSnap.child("collegeId").val()) {
                 studentsName.push(childSnap.val());
             }
         });
         callback(studentsName);
     });
 }
-export function getAllStudents(callback){
+
+/******************************
+ * Function to get all students
+ * @param {function} callback
+ ******************************/
+export function getAllStudents(callback) {
     const dbRef = firebase.database().ref();
     const studentsRef = dbRef.child("students");
-    studentsRef.once("value",(snap)=>{
+    studentsRef.once("value", (snap) => {
         callback(snap.val());
     });
 }
-export function getAllStudentFromStudentId(id,callback){
+
+/**********************************************
+ * Function to get student info from student id
+ * @param {Number} id
+ * @param {function} callback
+ **********************************************/
+export function getStudentFromStudentId(id, callback) {
     const dbRef = firebase.database().ref();
     const studentRef = dbRef.child("students").child(id);
-    studentRef.once("value",(snap)=>{
+    studentRef.once("value", (snap) => {
         callback(snap.val());
     });
 }
 
 
+/************************************
+ * Method to put colleges in firebase
+ ************************************/
+export function putNewStudent(studentPojo) {
+    const dbRef = firebase.database().ref();
+    const ref = dbRef.child("students").push();
+    ref.set(studentPojo);
+}
