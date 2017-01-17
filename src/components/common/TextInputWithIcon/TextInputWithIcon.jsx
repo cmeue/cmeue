@@ -8,10 +8,10 @@ class TextInputWithIcon extends React.Component {
                 <div className="embossed">
                     <span className={this.props.glyph || "glyphicon glyphicon-user"}></span>
                 </div>
-                <input type={this.props.type || "text"} className="form-control text-input-with-icon-input" placeholder={this.props.placeHolder || "Example Placeholder"} name={this.props.name}/>
+                <input type={this.props.type || "text"} className="form-control text-input-with-icon-input" placeholder={this.props.placeHolder || "Example Placeholder"} name={this.props.name} disabled={this.props.disabled}/>
             </div>
         );
     }
 }
 
-export default TextInputWithIcon
+export default TextInputWithIcon;

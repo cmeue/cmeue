@@ -141,8 +141,19 @@ export function putNewStudent(studentPojo) {
 export function updateExistingStudent(id,studentPojo){
     const dbRef = firebase.database().ref();
     const ref = dbRef.child("students").child(id);
-    ref.update(studentPojo);
-    
+    ref.update(studentPojo); 
+}
+
+
+export function addNewSkillToStudent(id, skillValue){
+    const dbRef = firebase.database().ref();
+    const studentRef = dbRef.child("students").child(id);
+    studentRef.once("value", (snap)=>{
+        studentRef.update({
+            ...snap.val(),
+            skills: [...snap.val().skills, skillValue]
+        });
+    });
 }
 
 /***************************************

@@ -1,0 +1,36 @@
+.general-information-editor {
+    margin: 0;
+    padding: 1;
+}
+
+.general-information-editor .submit-button {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.general-information-editor .student-detail {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.general-information-editor .student-detail>h4 {
+    display: inline;
+}
+
+.general-information-editor .student-detail #user-name, .student-detail #branch, .student-detail #college {
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+.general-information-editor .skill-add {
+    text-align: center;
+}
+
+.general-information-editor .skill-add > input {
+    width: 80%;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-right: 1em;
+}
